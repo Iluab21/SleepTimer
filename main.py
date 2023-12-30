@@ -134,5 +134,5 @@ if __name__ == '__main__':
     else:
         lock_error = QMessageBox(text='Приложение уже запущено')
         lock_error.setIcon(ICON)
-        lock_error.setWindowTitle('Ошибка')
+        lock_error.setWindowTitle('Error')
         lock_error.exec()
