@@ -108,14 +108,6 @@ def shutdown():
     os.system('shutdown /s /t 0')
 
 
-# Получаем файлы необходимые для запуска
-def resource_path(relative_path: str) -> str:
-    try:
-        base_path = sys._MEIPASS
-    except Exception:
-        base_path = os.path.abspath(".")
-    return os.path.join(base_path, relative_path)
-
 
 FILE_ATTRIBUTE_HIDDEN = 0x02
 
