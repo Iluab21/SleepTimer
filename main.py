@@ -160,5 +160,5 @@ if __name__ == '__main__':
         lock_error.setIcon(ICON)
         lock_error.setWindowTitle('Ошибка')
         lock_error.exec()
-
+# :)
 
