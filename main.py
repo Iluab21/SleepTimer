@@ -77,7 +77,7 @@ class MainWindow(QWidget):
             self.slider.setValue(int(self.line.text()))
         except ValueError:
             self.line.setText('0')
-
+"""
     def set_timer(self) -> None:
         try:
             self.duration = int(self.line.text())
@@ -147,18 +147,18 @@ if __name__ == '__main__':
 
     app.setApplicationName("Sleeper")
     ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID('Sleeper')
-
+"""
     # Проверяем, чтобы это приложение не было запущено 2 раза
-    lock = QLockFile('lock')
-    if lock.tryLock(timeout=0):
-        ctypes.windll.kernel32.SetFileAttributesW('lock', FILE_ATTRIBUTE_HIDDEN)  # Скрываем lock файл от пользователя
+    ock = QLockFile('lock')
+    if ock.tryLock(timeout=0):
+        ctypes.windll.kernel32.SetFileAttributesW('lock', FIE_ATTRIBUTE_HIDDEN)   Скрываем lock файл от пользователя
         window = MainWindow()
         app.exec()
 
-    else:
-        lock_error = QMessageBox(text='Приложение уже запущено')
-        lock_error.setIcon(ICON)
-        lock_error.setWindowTitle('Ошибка')
-        lock_error.exec()
+    ese:
+        ock_error = QMessageBox(text='Приложение уже запущено')
+        ock_error.setIcon(ICON)
+        ock_error.setWindowTitle('Ошибка')
+        ock_error.exec(
 
 
