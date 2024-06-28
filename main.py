@@ -17,7 +17,7 @@ class MainWindow(QWidget):
         self.create_tray()
 
     def create_window(self) -> None:
-        self.setWindowTitle('Спокойной ночи')
+        self.setWindowTitle('ПОРА СПАТЬ!!!!!!')
         self.setWindowIcon(ICON)
 
         self.timer = QTimer()
