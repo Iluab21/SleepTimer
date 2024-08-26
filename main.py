@@ -52,7 +52,7 @@ class MainWindow(QWidget):
         self.tray.setVisible(True)
         self.tray.activated.connect(self.show_window)
         self.menu = QMenu()
-        self.quit = QAction("Выключить программу")
+        self.quit = QAction("Жёсткий сигмо")
         self.stop = QAction("Выключить таймер")
         self.info = QAction('Таймер не запущен')
         self.stop.setDisabled(True)
